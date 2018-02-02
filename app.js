@@ -13,6 +13,8 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
+console.log("bot framework added");
+
 // bot.dialog('/', function (session) {
    // session.send("Hello");
     //session.beginDialog('/createSubscription');
